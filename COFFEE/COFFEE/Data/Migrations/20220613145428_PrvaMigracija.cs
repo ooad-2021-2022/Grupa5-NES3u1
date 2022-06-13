@@ -163,7 +163,7 @@ namespace COFFEE.Data.Migrations
                         column: x => x.IDNarudzbe,
                         principalTable: "Narudzba",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_ListaProizvoda_Proizvod_IDProizvoda",
                         column: x => x.IDProizvoda,
@@ -198,7 +198,7 @@ namespace COFFEE.Data.Migrations
                         column: x => x.IDNarudzbe,
                         principalTable: "Narudzba",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -224,7 +224,7 @@ namespace COFFEE.Data.Migrations
                         column: x => x.IDNarudzbe,
                         principalTable: "Narudzba",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(

@@ -10,6 +10,7 @@ namespace COFFEE.Models
         [ForeignKey("Proizvod")]
         public int IDProizvoda { get; set; }
         public Proizvod Proizvod { get; set; }
+
         [ForeignKey("Narudzba")]
         public int IDNarudzbe { get; set; }
         public Narudzba Narudzba { get; set; }

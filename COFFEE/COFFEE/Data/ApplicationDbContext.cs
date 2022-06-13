@@ -37,6 +37,7 @@ namespace COFFEE.Data
             modelBuilder.Entity<ListaProizvoda>().ToTable("ListaProizvoda");
             modelBuilder.Entity<ListaNarudzbi>().ToTable("ListaNarudzbi");
             modelBuilder.Entity<OcjeneProizvoda>().ToTable("OcjeneProizvoda");
+
             base.OnModelCreating(modelBuilder);
         }
 

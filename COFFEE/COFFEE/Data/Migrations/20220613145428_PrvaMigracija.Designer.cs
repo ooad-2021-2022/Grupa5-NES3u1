@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace COFFEE.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220613141240_PrvaMigracija")]
+    [Migration("20220613145428_PrvaMigracija")]
     partial class PrvaMigracija
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
