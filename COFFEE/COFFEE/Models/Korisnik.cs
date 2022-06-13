@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace COFFEE.Models
 {
-    public abstract class Korisnik
+    public class Korisnik
     {
         [Key]
         public int ID { get; set; }
@@ -16,5 +16,7 @@ namespace COFFEE.Models
         public Popust Popust { get; set; }
 
         public VrstaKorisnika VrstaKorisnika { get; set; }
+
+        public Korisnik() { }
     }
 }
