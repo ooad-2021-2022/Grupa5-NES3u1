@@ -8,6 +8,10 @@ namespace COFFEE.Models
     {
         [Key]
         public int ID { get; set; }
+        [Required]
+        [StringLength(maximumLength: 50, MinimumLength = 3, ErrorMessage ="Naziv proizvoda smije imati između 3 i 50 karaktera!")]
+        [RegularExpression(@"[0-9| |a-z|A-Z]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova, brojeva i razmaka!")]
+
         public string Naziv { get; set; }
         public double Cijena { get; set; }
         [EnumDataType(typeof(VrstaProizvoda))]
