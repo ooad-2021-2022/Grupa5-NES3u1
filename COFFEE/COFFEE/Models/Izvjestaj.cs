@@ -9,6 +9,7 @@ namespace COFFEE.Models
         [Key]
         public int ID { get; set; }
         public DateTime DatumIvrijeme { get; set; }
+        [EnumDataType(typeof(VrstaIzvjestaja))]
         public VrstaIzvjestaja vrstaIzvjestaja { get; set; }
         public Izvjestaj() { }
     }

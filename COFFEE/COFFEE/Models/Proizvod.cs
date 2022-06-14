@@ -10,6 +10,7 @@ namespace COFFEE.Models
         public int ID { get; set; }
         public string Naziv { get; set; }
         public double Cijena { get; set; }
+        [EnumDataType(typeof(VrstaProizvoda))]
         public VrstaProizvoda VrstaProizvoda { get; set; }
         [ForeignKey("Popust")]
         public int IDPopusta { get; set; }

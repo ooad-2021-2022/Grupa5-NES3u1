@@ -6,6 +6,7 @@ namespace COFFEE.Models
     {
         [Key]
         public int ID { get; set; }
+        [EnumDataType(typeof(VrstaProizvoda))]
         public VrstaProizvoda VrstaProizvoda { get; set; }
         public int Postotak { get; set; }
 

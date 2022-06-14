@@ -7,6 +7,7 @@ namespace COFFEE.Models
     {
         [Key]
         public int ID { get; set; }
+        [EnumDataType(typeof(VrstaPlacanja))]
         public VrstaPlacanja VrstaPlacanja { get; set; }
         [ForeignKey("Korisnik")]
         public int IDKorisnika { get; set; }

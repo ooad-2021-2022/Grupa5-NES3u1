@@ -14,7 +14,7 @@ namespace COFFEE.Models
         [ForeignKey("Popust")]
         public int IDPopusta { get; set; }
         public Popust Popust { get; set; }
-
+        [EnumDataType(typeof(VrstaKorisnika))]
         public VrstaKorisnika VrstaKorisnika { get; set; }
 
         public Korisnik() { }
