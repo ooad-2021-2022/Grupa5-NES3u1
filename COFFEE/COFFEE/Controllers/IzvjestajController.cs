@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using COFFEE.Data;
 using COFFEE.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace COFFEE.Controllers
 {
+    [Authorize]
     public class IzvjestajController : Controller
     {
         private readonly ApplicationDbContext _context;
